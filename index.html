@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="search-container">
+    <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+            type="text"
+            id="search-student"
+            placeholder="Search student by name or roll number..."
+        >
+    </div>
+</div>
+    <section class="dashboard">
+    <div class="card">
+        <h3>Total Students</h3>
+        <p id="total-students">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Passed Students</h3>
+        <p id="passed-students">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Failed Students</h3>
+        <p id="failed-students">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Average Percentage</h3>
+        <p id="average-percentage">0%</p>
+    </div>
+    
+</section>
+    <form action="" class="input-info" id="myForm">
+        <h1> Student Result Management System </h1>
+        <div class="form-group">
+            <label> Name </label>
+            <input type="text" name="name" id="s-name">
+        </div>
+        <div class="form-group">
+            <label> Roll-Number </label>
+            <input type="number" id="Roll-Number">
+        </div>
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="phone">
+        </div>
+        <div class="form-group">
+            <label>Class</label>
+            <input type="text" id="className">
+        </div>
+        <div class="form-group">
+            <label> Math </label>
+            <input type="number" id="math" min="0" max=" 100">
+        </div>
+        <div class="form-group">
+            <label> Physics </label>
+            <input type="number" id="Physics" min="0" max="100">
+        </div>
+        <div class="form-group">
+            <label> Chemistry </label>
+            <input type="number" id="Chemistry" min="0" max="100">
+        </div>
+        <div class="form-group">
+            <label> Hindi </label>
+            <input type="number" id="Hindi" min="0" max="100">
+        </div>
+        <div class="form-group">
+            <label> English </label>
+            <input type="number" id="English" min="0" max="100">
+        </div>
+
+        <button type="submit" id="btn">Add Student</button>
+
+
+
+    </form>
+    <table id="show table">
+        <thead>
+            <tr>
+                <th> Name </th>
+                <th> Roll-Number</th>
+                <th> Math </th>
+                <th> Physics </th>
+                <th> Chemistry</th>
+                <th> Hindi </th>
+                <th> English</th>
+                <th> total</th>
+                <th>grade</th>
+                <th> Result </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody id="update-table">
+
+        </tbody>
+    </table>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
